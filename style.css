@@ -416,19 +416,6 @@ svg {
   border-radius: 16px;
   margin: auto 0;
 }
-
-/* .bestprice {
-  background-color: yellow;
-  color: black;
-  font-weight: 700;
-  padding: 6px 3rem;
-  position: relative;
-  transform: rotate(45deg);
-  left: 105px;
-  top: 35px;
-  text-align: center;
-  z-index: 0;
-} */
 .pricesec2 h2,
 .pricesec3 h2 {
   text-align: center;
@@ -527,7 +514,7 @@ svg {
   margin: 16px;
 }
 .formmsec1 {
-  padding: 32px;
+  padding: 16px;
 }
 form {
   display: grid;
@@ -574,8 +561,10 @@ footer img {
   width: 100%;
   margin: 16px 0;
 }
-.footer1 p {
-  margin: 24px 0;
+.footer1 p,
+.footer2 p,
+.footer2 p {
+  margin: 24px 12px;
 }
 .footer1 {
 }
@@ -589,15 +578,27 @@ footer img {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+  nav div {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 30px;
   }
   .navhidden {
   }
   .FormSection {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
   }
   .FormSection img {
-    display: none;
+    /* display: none; */
+    height: 600px;
   }
   .PriceSection {
     display: grid;
